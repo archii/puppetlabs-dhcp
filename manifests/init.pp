@@ -17,6 +17,7 @@ class dhcp (
   Hash[String, Hash[String, String]] $dhcp_conf_fragments = {},
   Optional[Array[String]] $interfaces                     = undef,
   String $interface                                       = 'NOTSET',
+  String $local_address                                   = undef,
   $dnsupdatekey                                           = undef,
   String $ddns_update_style                               = 'interim',
   $dnskeyname                                             = undef,

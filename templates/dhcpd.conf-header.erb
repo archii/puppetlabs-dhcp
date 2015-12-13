@@ -20,6 +20,9 @@ omapi-key <%= @omapi_name %>;
 default-lease-time <%= @default_lease_time %>;
 max-lease-time <%= @max_lease_time %>;
 log-facility <%= @logfacility %>;
+<% if @local_address -%>
+local-address <%= @local_address %>;
+<% end -%>
 
 # ----------
 # Options
